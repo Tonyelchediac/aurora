@@ -36,7 +36,7 @@ const indexHeader = `
                     </a>
                 </li>
                 <li>
-                    <a href="login.html" class="nav-link" id="nav-card">
+                    <a href="login.html" class="nav-link" id="nav-login">
                         <i class='bx bx-user'></i>
                         <span class="link-text">Log In</span>
                     </a>
@@ -58,4 +58,6 @@ if (currentPath.includes('index.html') || currentPath === '/' || currentPath.end
     document.getElementById('nav-track')?.classList.add('active');
 } else if (currentPath.includes('card.html')) {
     document.getElementById('nav-card')?.classList.add('active');
+} else if (currentPath.includes('login.html')) {
+    document.getElementById('nav-login')?.classList.add('active');
 }
