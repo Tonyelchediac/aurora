@@ -2,24 +2,37 @@
 const nav = document.getElementById("nav");
 const headerbackground = document.getElementById("headerbackground");
 const hamburger = document.getElementById("hamburger");
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("display");
-  headerbackground.classList.toggle("display");
-});
-headerbackground.addEventListener("click", () => {
-  nav.classList.toggle("display");
-  headerbackground.classList.toggle("display");
-});
+
+if (hamburger && nav && headerbackground) {
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("display");
+    headerbackground.classList.toggle("display");
+  });
+}
+
+if (headerbackground && nav) {
+  headerbackground.addEventListener("click", () => {
+    nav.classList.toggle("display");
+    headerbackground.classList.toggle("display");
+  });
+}
 
 // smooth scroll
 const navUl = document.querySelector("#nav ul");
-navUl.addEventListener("click", (e) => {
-  e.preventDefault();
-  const target = document.querySelector(e.target.getAttribute("href"));
-  target.scrollIntoView({ behavior: "smooth" });
-  nav.classList.toggle("display");
-  headerbackground.classList.toggle("display");
-});
+if (navUl && nav && headerbackground) {
+  navUl.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = e.target.getAttribute("href");
+    if (href && href.startsWith("#")) {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    nav.classList.toggle("display");
+    headerbackground.classList.toggle("display");
+  });
+}
 
 // image background color change
 const carcolorbtn = document.getElementById("carcolorbtn");
@@ -28,8 +41,10 @@ const carColorName = document.getElementById("carColorName");
 const carImage = document.getElementById("carImage");
 const carColorCart = document.getElementById("carColorCart");
 
-carcolorbtn.addEventListener("click", () => {
-  carImage.style.backgroundColor = carColor.value;
-  carColorName.value = carColor.value;
-  carColorCart.value = carColor.value;
-});
+if (carcolorbtn && carColor && carImage) {
+  carcolorbtn.addEventListener("click", () => {
+    carImage.style.backgroundColor = carColor.value;
+    if (carColorName) carColorName.value = carColor.value;
+    if (carColorCart) carColorCart.value = carColor.value;
+  });
+}

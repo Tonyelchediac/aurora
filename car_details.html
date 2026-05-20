@@ -11,27 +11,7 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div id="headerbackground"></div>
-    <header>
-        <div class="hamburger" id="hamburger">
-            <i class='bx bx-menu-alt-left'></i>
-        </div>
-        <div class="logo">
-            Aurora
-        </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#cars-section">Cars</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="login">
-            <i class='bx bx-log-in-circle'></i>
-        </div>
-    </header>
+    <script src="header&footer/header.js" defer></script>
 
     <!-- car details section -->
     <section>
@@ -58,9 +38,8 @@
         <div class="container">
             <div class="car-colors">
                 <h4>Car Color:</h4>
-                <input type="text" name="carColorName" id="carColorName" value="white" readonly>
                 <div class="colorsXYZ">
-                    <input type="color" name="carColor" id="carColor" value="#FFFFFF">
+                    <input type="color" name="carColor" id="carColor" value="white">
                     <button id="carcolorbtn" class="btn">Set Color</button>
                 </div>
             </div>
@@ -118,17 +97,28 @@
         </div>
     </section>
 
+    <!-- add to cart section -->
     <section id="addtocart">
         <div class="container">
             <div class="form-content">
                 <div class="divOne">
-                    <form action="" method="post" name="supportform">
+                    <form action="" method="post" name="supportform" id="supportform">
                         <label for="carQuantity">Car Quantity :</label>
-                        <input type="number" name="carQuantity" id="carQuantity" value="1" min="1">
-                        <h4>Total: 105,000$</h4>
+                        <input type="number" name="carQuantity" id="carQuantity" value="1" min="1" required>
                         <input type="hidden" name="carSeries" id="carSeries" value="aurora-x-series">
-                        <input type="hidden" name="carColorCart" id="carColorCart" value="white">
+                        <label for="carColorCart">Car Color :</label>
+                        <input type="text" name="carColorCart" id="carColorCart" value="White" readonly>
+                        <label for="deliveryPort">Delivery Port :</label>
+                        <input type="text" name="deliveryPort" id="deliveryPort" placeholder="Enter delivery port"
+                            required>
+                        <label for="addressLocation">Address Location :</label>
+                        <textarea name="addressLocation" id="addressLocation" rows="4"
+                            placeholder="Enter full delivery address" required></textarea>
+                        <h4 id="totalPrice">
+                            Total: <span>105,000$</span>
+                        </h4>
                         <input type="submit" class="btn" value="Add To Cart">
+
                     </form>
                 </div>
             </div>
@@ -159,9 +149,9 @@
         </div>
     </footer>
 
-
-
+    <script src="js/cart-handler.js" defer></script>
     <script src="js/script.js" defer></script>
+
 </body>
 
 </html>
