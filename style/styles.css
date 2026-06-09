@@ -27,6 +27,56 @@ body {
   font-family: var(--inter);
 }
 
+/* page move animations */
+@view-transition {
+  navigation: auto;
+}
+
+main {
+  view-transition-name: page-content;
+}
+
+::view-transition-group(page-content) {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+::view-transition-old(page-content) {
+  animation-name: slide-out;
+}
+::view-transition-new(page-content) {
+  animation-name: slide-in;
+}
+
+@keyframes slide-out {
+  to {
+    translate: -100vw;
+  }
+}
+@keyframes slide-in {
+  from {
+    translate: 100vw;
+  }
+}
+
+.animation {
+  animation: Animations 0.5s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+@keyframes Animations {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -549,6 +599,17 @@ footer {
 
 .copyright {
   color: var(--Tertiary);
+}
+.chedilex-footer-container .chedilex-footer-content {
+  color: var(--Tertiary) !important;
+  font-weight: bold;
+  padding: 5px 0 !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  justify-content: start !important;
+}
+.chedilex-footer-container .chedilex-footer-content a img {
+  filter: brightness(0.5);
 }
 
 .socialmedia {
