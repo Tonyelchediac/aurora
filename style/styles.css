@@ -207,7 +207,7 @@ header .icons a {
 .search-content {
   padding: 20px;
   background: var(--secondary);
-  box-shadow: 10px 10px 20px var(--primary);
+  box-shadow: 5px 5px 10px var(--primary);
   position: absolute;
   bottom: -80px;
   right: 0px;
