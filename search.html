@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora | New</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo headline">Aurora</div>
+                <nav class="nav" id="navlinks">
+                    <div class="x-icon" id="closeBtn">
+                        <span class="material-symbols-outlined text-primary">close</span>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="new.html" class="active">New</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href=""> <span class="material-symbols-outlined text-primary">search</span>
+                    </a>
+                    <a href="" class="icon-bag"> <span
+                            class="material-symbols-outlined text-primary">shopping_bag</span>
+                        <div class="badge">0</div>
+                    </a>
+                    <div class="hamburger" id="hamburger">
+                        <a href=""> <span class="material-symbols-outlined text-primary">menu</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- women section title -->
+    <section id="womenTitle" class="section">
+        <div class="container">
+            <div class="page-title-content">
+                <p class="headline">New Arrivals</p>
+                <p class="des">Discover the latest additions to our collection, featuring the newest trends and
+                    essentials.</p>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- main cut in 2 sections, one for filter and the other for content -->
+    <main class="main">
+        <div class="container">
+            <!-- filter section -->
+            <section id="filter">
+                <div class="section">
+                    <form class="filter-content" method="post" action="#">
+                        <div class="sizes">
+                            <p>size</p>
+                            <div class="size-buttons">
+                                <!-- xs -->
+                                <div class="size-option">
+                                    <input type="checkbox" name="size" id="size-xs" value="xs" class="size-btn-filter">
+                                    <label for="size-xs">XS</label>
+                                </div>
+                                <!-- s -->
+                                <div class="size-option">
+                                    <input type="checkbox" name="size" id="size-s" value="s" class="size-btn-filter">
+                                    <label for="size-s">S</label>
+                                </div>
+                                <!-- m -->
+                                <div class="size-option">
+                                    <input type="checkbox" name="size" id="size-m" value="m" class="size-btn-filter">
+                                    <label for="size-m">M</label>
+                                </div>
+                                <!-- l -->
+                                <div class="size-option">
+                                    <input type="checkbox" name="size" id="size-l" value="l" class="size-btn-filter">
+                                    <label for="size-l">L</label>
+                                </div>
+                                <!-- xl -->
+                                <div class="size-option">
+                                    <input type="checkbox" name="size" id="size-xl" value="xl" class="size-btn-filter">
+                                    <label for="size-xl">XL</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colors">
+                            <p>colors</p>
+                            <div class="color-buttons">
+                                <!-- black -->
+                                <div class="color-option">
+                                    <input type="checkbox" name="color" id="color-black" value="black"
+                                        class="color-btn-filter">
+                                    <label for="color-black" style="background-color: #000000;"></label>
+                                </div>
+                                <!-- white -->
+                                <div class="color-option">
+                                    <input type="checkbox" name="color" id="color-white" value="white"
+                                        class="color-btn-filter">
+                                    <label for="color-white" style="background-color: #ffffff;"></label>
+                                </div>
+                                <!-- gray -->
+                                <div class="color-option">
+                                    <input type="checkbox" name="color" id="color-gray" value="gray"
+                                        class="color-btn-filter">
+                                    <label for="color-gray" style="background-color: #808080;"></label>
+                                </div>
+                                <!-- dark gray -->
+                                <div class="color-option">
+                                    <input type="checkbox" name="color" id="color-dark-grey" value="dark-grey"
+                                        class="color-btn-filter">
+                                    <label for="color-dark-grey" style="background-color: #515151;"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices">
+                            <p>price</p>
+                            <div class="price-filters">
+                                <!-- 0 200 -->
+                                <div class="price-option">
+                                    <input type="checkbox" name="price" id="price-0-200" value="0-200"
+                                        class="price-btn-filter">
+                                    <label for="price-0-200">$0 — $200</label>
+                                </div>
+                                <!-- 200 500 -->
+                                <div class="price-option">
+                                    <input type="checkbox" name="price" id="price-200-500" value="200-500"
+                                        class="price-btn-filter">
+                                    <label for="price-200-500">$200 — $500</label>
+                                </div>
+                                <!-- +500 -->
+                                <div class="price-option">
+                                    <input type="checkbox" name="price" id="price-500plus" value="500+"
+                                        class="price-btn-filter">
+                                    <label for="price-500plus">$500+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="resetfilter">
+                            <input type="submit" value="Reset Filters" class="submitBtn">
+                            <span class="material-symbols-outlined text-primary">close</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- 2nd section items section -->
+            <section id="itemsSection" class="section">
+                <div class="items-section">
+                    <!-- item -->
+                    <a href="" class="items-div-pi animation">
+                        <div class="image-button">
+                            <div class="new">New Arrival</div>
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATyuSvxKB-dFIUeWD_aKcAxMNDoUzFM8IU-0IAACxYtM6EEOawPhkE_AqSZpzatJlhcpcM2Jk8Y1wWMCKaAt9kjDrm0C-QWDdveFSkjwTPNV2vRmgZAa2-KNwaQzVz77BnBATcFpWWNgKEwu654mYo87vEtdk9N1V7xtZlhHaaBbtPKhLtxX03nBZBBsKuN_2u76P34U5itIJBtMyM3XhlR_-LYJJlAlfCRytTQE88sCqEeVQaUbkPmJNdZ67_Zn4V2GANR1bJWtk"
+                                alt="item image">
+                            <div class="cart-btn">
+                                <button>Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="items-details">
+                            <div class="details">
+                                <p class="i-name">Structural Wool Coat</p>
+                                <p class="i-type">NOIR</p>
+                            </div>
+                            <p class="i-price">$450</p>
+                        </div>
+                    </a>
+                    <!-- item -->
+                    <a href="" class="items-div-pi animation">
+                        <div class="image-button">
+                            <div class="new">New Arrival</div>
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrPcSgiNZ3phK9Mf2guPzmamzFIgY-jfZXk58a4o4Dv22FTRjNRzAksFSjb8Pzo6MJGYH4qqoTIknfOSzG7H7TcEw2Dlr2CYiEWAQFFaoNpdnaJYpP3sSjY4nDbuMXhkThVQaGhDIw23_GvN3NJUAQ8Y5tDHz71ZtqXcD6rxixEOgFm4iA7ZKws62Z0qZsEMUMrAAUvoPrTpNCObU_H2lLKeWSaXm7yigjl7hp-4_vx1ieGroJkqC-NueKR0p8KHVzvLvNxMEPUK8"
+                                alt="item image">
+                            <div class="cart-btn">
+                                <button>Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="items-details">
+                            <div class="details">
+                                <p class="i-name">Silk Wide-Leg Trousers</p>
+                                <p class="i-type">ALABASTER</p>
+                            </div>
+                            <p class="i-price">$320</p>
+                        </div>
+                    </a>
+                    <!-- item -->
+                    <a href="" class="items-div-pi animation">
+                        <div class="image-button">
+                            <div class="new">New Arrival</div>
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMYHg5vAxbL4eA-1mm075ly2W3V2oSPFlsYoQX-B8pcMxJvjR3zGabwd1-PEbMW0uJsd04cUvB24ikk8g6iKiyF5G4BRXep-Xu2R5vYKR9DUHl_OjGk8jX0VsNd5yu1hq_sblvR4jToUumz5NYpYFm_jhNKHrtU_lYw7QCRnRt43snxFdbQeJ8ttO3KjbDsQSRWTMzBghogo1HQbI5Qa-khvQ0tzRTXs43n03CHkI9fNGp2U2cdu5QhZ-ajPeWL4ImUrHQK1NV4eA"
+                                alt="item image">
+                            <div class="cart-btn">
+                                <button>Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="items-details">
+                            <div class="details">
+                                <p class="i-name">Pleated Knit Gown</p>
+                                <p class="i-type">OBSIDIAN</p>
+                            </div>
+                            <p class="i-price">$550</p>
+                        </div>
+                    </a>
+                    <!-- item -->
+                    <a href="" class="items-div-pi animation">
+                        <div class="image-button">
+                            <div class="new">New Arrival</div>
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZy-2O4zsak3vMjn3B6WtEboRfzrh0JMkZ0lN12z2g5i1rrvx1OcPjohcNbNeb8rNrqul2bM50oUFtqgwQihVH-smaHNhcDe2_dZvaYIuhxjgKyy37fIuF2vVAtesfUyCAZJAPvKkr3-PLk0i3P1VzIoIMGhwREAqrYubVKFwkEI1xpRfBS72AnCRVTVfEKntqsgYbLItE2UvsWmY5Gacb59TfMAjnozhhCMfxrusM4Ebm3b8GXpUczxEo2gg75R6ezIJ3WJrfkD8"
+                                alt="item image">
+                            <div class="cart-btn">
+                                <button>Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="items-details">
+                            <div class="details">
+                                <p class="i-name">Architectural Blazer</p>
+                                <p class="i-type">CHARCOAL</p>
+                            </div>
+                            <p class="i-price">$420</p>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="ftr1">
+                    <p class="headline">Aurora</p>
+                    <p>Curating the finest monochrome essentials for the modern wardrobe.</p>
+                </div>
+                <div class="ftr2">
+                    <p class="titlep">Collections</p>
+                    <ul>
+                        <li><a href="">Men's New Arrivals</a></li>
+                        <li><a href="">Women's New Arrivals</a></li>
+                        <li><a href="">Essentials</a></li>
+                        <li><a href="">The Archives</a></li>
+                    </ul>
+                </div>
+                <div class="ftr3">
+                    <p class="titlep">Customer Service</p>
+                    <ul>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">return</a></li>
+                        <li><a href="">faq</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="ftr4">
+                    <p class="titlep">Newsletter</p>
+                    <p>Subscribe for early access and seasonal updates</p>
+                    <form action="#" method="post" class="input-code">
+                        <input type="email" placeholder="Email Address" name="newsEmail" class="email-input">
+                        <div class="submit-wrapper">
+                            <input type="submit" value="" class="submit-btn">
+                            <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- last footer -->
+        <div class="container">
+            <div class="lastfooter">
+                <div class="copyright">© 2026 AURORA. ALL RIGHTS RESERVED.</div>
+                <div class=" socialmedia">
+                    <a href="">instagram</a>
+                    <a href="">pinterest</a>
+                    <a href="">tiktok</a>
+                </div>
+            </div>
+            <div class="chedilex-footer-container"></div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/chedilex/chedilex-assets-footer@main/footer.js?v=1.0.2"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

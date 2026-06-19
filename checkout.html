@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora | checkout</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo headline">Aurora</div>
+                <nav class="nav" id="navlinks">
+                    <div class="x-icon" id="closeBtn">
+                        <span class="material-symbols-outlined text-primary">close</span>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="new.html">New</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href=""> <span class="material-symbols-outlined text-primary">search</span>
+                    </a>
+                    <a href="cart.html" class="icon-bag"> <span
+                            class="material-symbols-outlined text-primary">shopping_bag</span>
+                        <div class="badge">0</div>
+                    </a>
+                    <div class="hamburger" id="hamburger">
+                        <a href=""> <span class="material-symbols-outlined text-primary">menu</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- women section title -->
+    <section id="womenTitle" class="section  no-line">
+        <div class="container">
+            <div class="page-title-content no2-line">
+                <p class="headline">Checkout</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- main content checkout and items -->
+    <main class="main">
+        <div class="container">
+            <!-- cart section -->
+            <section id="cart" class="section">
+                <div class="checkoutTitle">
+                    <span>01</span>
+                    <p>shipping information</p>
+                </div>
+                <hr>
+                <form action="" method="post">
+                    <div class="forminputs">
+                        <div class="form-div">
+                            <label for="name">First Name</label>
+                            <input type="text" name="firstname" placeholder="alexander">
+                        </div>
+                        <div class="form-div">
+                            <label for="name">Last Name</label>
+                            <input type="text" name="lastname" placeholder="vance">
+                        </div>
+                    </div>
+                    <div class="form-div">
+                        <label for="name">street address </label>
+                        <input type="text" name="addressline" placeholder="22 Baker Street, Apartment 4B">
+                    </div>
+                    <div class="forminputs">
+                        <div class="form-div">
+                            <label for="name">City</label>
+                            <input type="text" name="" placeholder="New York">
+                        </div>
+                        <div class="form-div">
+                            <label for="name">postal Code</label>
+                            <input type="text" name="" placeholder="10001">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment-type">
+                    <div class="checkoutTitle">
+                        <span>02</span>
+                        <p>payment method</p>
+                    </div>
+                    <hr>
+                    <form action="" method="post">
+                        <div class="form-div-payment">
+                            <div class="form-payment-type">
+                                <input type="checkbox" name="payment" value="cash">
+                                <p>Cash on delivery</p>
+                            </div>
+                            <div class="form-payment-type">
+                                <span class="material-symbols-outlined text-primary">payments</span>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- procceed section -->
+            <section id="checkout-content" class="section">
+                <div class="order-content padding">
+                    <p class="ordersummary headline">order summary</p>
+
+                    <div class="item-type-content">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATyuSvxKB-dFIUeWD_aKcAxMNDoUzFM8IU-0IAACxYtM6EEOawPhkE_AqSZpzatJlhcpcM2Jk8Y1wWMCKaAt9kjDrm0C-QWDdveFSkjwTPNV2vRmgZAa2-KNwaQzVz77BnBATcFpWWNgKEwu654mYo87vEtdk9N1V7xtZlhHaaBbtPKhLtxX03nBZBBsKuN_2u76P34U5itIJBtMyM3XhlR_-LYJJlAlfCRytTQE88sCqEeVQaUbkPmJNdZ67_Zn4V2GANR1bJWtk"
+                            alt="item image">
+                        <div class="item-details-content">
+                            <div class="item-data">
+                                <p class="title">Structural Wool Coat</p>
+                                <p class="details">Size: M | Colour: Black</p>
+                            </div>
+                            <p class="price">$1250.00</p>
+                        </div>
+                    </div>
+
+                    <div class="item-type-content">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATyuSvxKB-dFIUeWD_aKcAxMNDoUzFM8IU-0IAACxYtM6EEOawPhkE_AqSZpzatJlhcpcM2Jk8Y1wWMCKaAt9kjDrm0C-QWDdveFSkjwTPNV2vRmgZAa2-KNwaQzVz77BnBATcFpWWNgKEwu654mYo87vEtdk9N1V7xtZlhHaaBbtPKhLtxX03nBZBBsKuN_2u76P34U5itIJBtMyM3XhlR_-LYJJlAlfCRytTQE88sCqEeVQaUbkPmJNdZ67_Zn4V2GANR1bJWtk"
+                            alt="item image">
+                        <div class="item-details-content">
+                            <div class="item-data">
+                                <p class="title">Structural Wool Coat</p>
+                                <p class="details">Size: M | Colour: Black</p>
+                            </div>
+                            <p class="price">$1250.00</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="totaldata">
+                        <p>subtotal</p>
+                        <p>$1250.00</p>
+                    </div>
+                    <div class="totaldata">
+                        <p>Shipping</p>
+                        <p>$3.00</p>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$1,250.00</p>
+                    </div>
+                    <div class="checkoutbtn">
+                        <a href="checkout.html" class="btn">Place order</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="ftr1">
+                    <p class="headline">Aurora</p>
+                    <p>Curating the finest monochrome essentials for the modern wardrobe.</p>
+                </div>
+                <div class="ftr2">
+                    <p class="titlep">Collections</p>
+                    <ul>
+                        <li><a href="">Men's New Arrivals</a></li>
+                        <li><a href="">Women's New Arrivals</a></li>
+                        <li><a href="">Essentials</a></li>
+                        <li><a href="">The Archives</a></li>
+                    </ul>
+                </div>
+                <div class="ftr3">
+                    <p class="titlep">Customer Service</p>
+                    <ul>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">return</a></li>
+                        <li><a href="">faq</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="ftr4">
+                    <p class="titlep">Newsletter</p>
+                    <p>Subscribe for early access and seasonal updates</p>
+                    <form action="#" method="post" class="input-code">
+                        <input type="email" placeholder="Email Address" name="newsEmail" class="email-input">
+                        <div class="submit-wrapper">
+                            <input type="submit" value="" class="submit-btn">
+                            <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- last footer -->
+        <div class="container">
+            <div class="lastfooter">
+                <div class="copyright">© 2026 AURORA. ALL RIGHTS RESERVED.</div>
+                <div class=" socialmedia">
+                    <a href="">instagram</a>
+                    <a href="">pinterest</a>
+                    <a href="">tiktok</a>
+                </div>
+            </div>
+            <div class="chedilex-footer-container"></div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/chedilex/chedilex-assets-footer@main/footer.js?v=1.0.2"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

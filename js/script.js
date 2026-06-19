@@ -11,3 +11,12 @@ closeBtn.addEventListener("click", (e) => {
   e.preventDefault();
   navlinks.classList.remove("active");
 });
+
+// display search input form
+const searchBtn = document.getElementById("searchBtn");
+const searchContent = document.getElementById("searchContent");
+
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  searchContent.classList.toggle("active");
+});
